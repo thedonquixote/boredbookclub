@@ -8,7 +8,7 @@ import calendar
 app = Flask(__name__)
 
 datetime_object = datetime.datetime.now()
-pages = 400
+pages = 176
 pagef=round(pages * (datetime_object.day)/calendar.monthrange(datetime_object.year,datetime_object.month)[1])
 percentagef=round((pagef/pages)*100)
 @app.route('/')
